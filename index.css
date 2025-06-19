@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 24% 92%;  /* Light beige #ECDFCC */
+    --foreground: 108 14% 5%;  /* Very dark green #181C14 */
+
+    --card: 36 24% 92%;  /* Light beige #ECDFCC */
+    --card-foreground: 108 14% 5%;  /* Very dark green #181C14 */
+
+    --popover: 36 24% 92%;  /* Light beige #ECDFCC */
+    --popover-foreground: 108 14% 5%;  /* Very dark green #181C14 */
+
+    --primary: 108 14% 8%; /* Dark green based on #181C14 */
+    --primary-foreground: 36 24% 92%;  /* Light beige #ECDFCC */
+
+    --secondary: 88 16% 40%; /* Medium green #697565 */
+    --secondary-foreground: 36 24% 92%;  /* Light beige #ECDFCC */
+
+    --muted: 88 16% 40%; /* Medium green #697565 */
+    --muted-foreground: 36 24% 90%; /* Lighter beige */
+
+    --accent: 88 16% 40%; /* Medium green #697565 */
+    --accent-foreground: 36 24% 92%; /* Light beige #ECDFCC */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 87 9% 25%; /* Dark green-gray */
+    --input: 87 9% 25%; /* Dark green-gray */
+    --ring: 108 14% 8%; /* Dark green based on #181C14 */
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 108 14% 8%; /* Dark green based on #181C14 */
+    --sidebar-foreground: 36 24% 92%; /* Light beige #ECDFCC */
+    --sidebar-primary: 87 9% 25%; /* Dark green-gray */
+    --sidebar-primary-foreground: 36 24% 92%; /* Light beige #ECDFCC */
+    --sidebar-accent: 96 12% 15%; /* Very dark green */
+    --sidebar-accent-foreground: 36 24% 92%; /* Light beige #ECDFCC */
+    --sidebar-border: 96 12% 15%; /* Very dark green */
+    --sidebar-ring: 87 9% 25%; /* Dark green-gray */
+  }
+
+  .dark {
+    --background: 108 14% 5%; /* Very dark green #181C14 */
+    --foreground: 36 24% 92%; /* Light beige #ECDFCC */
+
+    --card: 96 12% 15%; /* Very dark green */
+    --card-foreground: 36 24% 92%; /* Light beige #ECDFCC */
+
+    --popover: 96 12% 15%; /* Very dark green */
+    --popover-foreground: 36 24% 92%; /* Light beige #ECDFCC */
+
+    --primary: 36 24% 92%; /* Light beige #ECDFCC */
+    --primary-foreground: 108 14% 5%; /* Very dark green #181C14 */
+
+    --secondary: 87 9% 25%; /* Dark green-gray #3C3D37 */
+    --secondary-foreground: 36 24% 92%; /* Light beige #ECDFCC */
+
+    --muted: 87 9% 25%; /* Dark green-gray #3C3D37 */
+    --muted-foreground: 36 20% 80%; /* Muted light beige */
+
+    --accent: 88 16% 40%; /* Medium green #697565 */
+    --accent-foreground: 36 24% 92%; /* Light beige #ECDFCC */
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 36 24% 92%; /* Light beige #ECDFCC */
+
+    --border: 87 9% 25%; /* Dark green-gray #3C3D37 */
+    --input: 87 9% 30%; /* Slightly lighter dark green-gray */
+    --ring: 36 24% 92%; /* Light beige #ECDFCC */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.field-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50,50 m-49,0 a49,49 0 1,0 98,0 a49,49 0 1,0 -98,0 M50,50 m-45,0 a45,45 0 1,0 90,0 a45,45 0 1,0 -90,0' stroke='rgba(105, 117, 101, 0.25)' fill='none' stroke-width='1'/%3E%3C/svg%3E");
+  /* Changed to medium green #697565 */
+}
